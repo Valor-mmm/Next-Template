@@ -95,6 +95,15 @@ It provides types to Javascript which really boosts developer experience and cod
 
 - [tsconfig.json](tsconfig.json)
 
+### Other
+
+#### [Semantic Release](https://github.com/semantic-release/semantic-release/tree/master)
+
+Semantic Release is a tool that builds on the clean commit messages enforced by commitlint.
+It consumes the commit messages and determines the release version based on the prefix (feat/fix/chore).
+This version will then be added to the package.json and GitHub.
+Furthermore, the release also creates useful release notes.
+
 ## Workflows
 
 We use GitHub actions/workflows to ensure code quality and perform deployments.
@@ -105,3 +114,4 @@ During development, we first ensure on every push that:
 
 - There are no lint errors
 - There are no vulnerable dependencies
+- Semantic Release Dry run to check if a release would work without actually triggering one
