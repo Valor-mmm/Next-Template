@@ -94,3 +94,14 @@ It provides types to Javascript which really boosts developer experience and cod
 **Important files:**
 
 - [tsconfig.json](tsconfig.json)
+
+## Workflows
+
+We use GitHub actions/workflows to ensure code quality and perform deployments.
+
+### Dev workflow
+
+During development, we first ensure on every push that:
+
+- There are no lint errors
+- There are no vulnerable dependencies
