@@ -115,3 +115,12 @@ During development, we first ensure on every push that:
 - There are no lint errors
 - There are no vulnerable dependencies
 - Semantic Release Dry run to check if a release would work without actually triggering one
+
+### Prod workflow
+
+This workflow will run after a PR(pull request) has been merged. It will:
+
+- Verify the code quality by doing
+  - Code Linting
+  - Dependency security checks
+- Trigger a semantic release
