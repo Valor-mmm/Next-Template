@@ -16,15 +16,6 @@
     "lint": "pnpm run /lint:.+/",
     "prepare": "husky"
   },
-  "lint-staged": {
-    "{app}/**/*.{ts,tsx}": [
-      "next lint --fix",
-      "prettier --write --ignore-unknown"
-    ],
-    "!{app}/**/*.{ts,tsx}": [
-      "prettier --write --ignore-unknown"
-    ]
-  },
   "dependencies": {
     "next": "14.2.1",
     "react": "18.2.0",
