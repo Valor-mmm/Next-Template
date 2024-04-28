@@ -53,6 +53,18 @@ To learn more about Next.js, take a look at the following resources:
 - [app directory](./app)
 - [next.config.mjs](next.config.mjs)
 
+#### [Next-Intl](https://next-intl-docs.vercel.app/)
+
+Next-intl is used for i18n. It can be used on the client and server side. See the following link on how to use it:
+https://next-intl-docs.vercel.app/docs/environments/server-client-components
+
+**Important files:**
+
+- [i18n.ts](i18n.ts)
+- [middleware.ts](middleware.ts)
+- [next.config.mjs](next.config.mjs)
+- [layout.tsx](app%2F%5Blocale%5D%2Flayout.tsx)
+
 #### [Tailwind CSS](https://tailwindcss.com/)
 
 Has been installed in conjunction with Nextjs.
