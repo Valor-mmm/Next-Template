@@ -120,6 +120,13 @@ Furthermore, the release also creates useful release notes.
 
 We use GitHub actions/workflows to ensure code quality and perform deployments.
 
+### Dependabot
+
+Is used to automatically create PRs for dependency updates.
+
+**Important files**:
+- [dependabot.yml](.github%2Fdependabot.yml)
+
 ### Dev workflow
 
 During development, we first ensure on every push that:
