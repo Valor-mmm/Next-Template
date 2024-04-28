@@ -125,6 +125,7 @@ We use GitHub actions/workflows to ensure code quality and perform deployments.
 Is used to automatically create PRs for dependency updates.
 
 **Important files**:
+
 - [dependabot.yml](.github%2Fdependabot.yml)
 
 ### Dev workflow
