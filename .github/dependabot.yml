@@ -15,10 +15,12 @@ updates:
         update-types:
           - 'major'
           - 'minor'
-      tailwind:
+      ui:
         patterns:
           - 'tailwindcss'
           - 'postcss'
+          - 'framer-motion'
+          - '*nextui-org*'
       release:
         patterns:
           - '*commitlint*'

@@ -4,7 +4,6 @@ import { locales } from '@/globalConstants';
 
 export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
-  console.log('locale', locale);
   if (!locales.includes(locale)) notFound();
 
   return {
