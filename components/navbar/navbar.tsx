@@ -5,6 +5,7 @@ import {
   NavbarContent,
   NavbarItem,
 } from '@nextui-org/navbar';
+import { Button } from '@nextui-org/button';
 
 export default function Navbar() {
   return (
@@ -18,8 +19,12 @@ export default function Navbar() {
         <NavbarItem>Third Nav</NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">Nav Action 1</NavbarItem>
-        <NavbarItem>Nav Action 2</NavbarItem>
+        <NavbarItem className="hidden lg:flex">
+          <Button color="primary">Nav Action 1</Button>
+        </NavbarItem>
+        <NavbarItem>
+          <Button color="secondary">Nav Action 2</Button>
+        </NavbarItem>
       </NavbarContent>
     </NextUiNavbar>
   );

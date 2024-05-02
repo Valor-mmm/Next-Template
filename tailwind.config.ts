@@ -5,12 +5,29 @@ const config: Config = {
   content: [
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@nextui-org/theme/dist/components/(button|navbar|ripple|spinner).js',
   ],
   theme: {
     extend: {},
   },
   darkMode: 'class',
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            primary: '#0b3961',
+            secondary: '#13c6e4',
+          },
+        },
+        dark: {
+          colors: {
+            primary: '#0b3961',
+            secondary: '#13c6e4',
+          },
+        },
+      },
+    }),
+  ],
 };
 export default config;

@@ -28,10 +28,10 @@ export default function LocaleLayout({
 }) {
   return (
     <html lang={locale}>
-      <body>
+      <body className="dark text-foreground bg-background">
         <Providers locale={locale}>
           <Navbar />
-          {children}
+          <main>{children}</main>
         </Providers>
       </body>
     </html>
