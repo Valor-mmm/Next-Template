@@ -77,6 +77,20 @@ Documentation and list of available classes can be found here:https://tailwindcs
 - [tailwind.config.ts](tailwind.config.ts)
 - [postcss.config.mjs](postcss.config.mjs)
 
+#### [Next UI](https://nextui.org/)
+
+NextUi is a UI library that provides pre-styled accessible components for Next.js. Usage:
+
+1. `npm install -g nextui`
+2. `nextui add ${component}`
+
+Import the component in your files and style them with Tailwind if necessary
+
+**Important files:**
+
+- [providers.tsx](app%2F%5Blocale%5D%2Fproviders.tsx)
+- [tailwind.config.ts](tailwind.config.ts)
+
 ### Code Quality
 
 #### [Prettier](https://prettier-doc.netlify.app/)

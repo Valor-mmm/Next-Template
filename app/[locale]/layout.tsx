@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import '../globals.css';
 import { getTranslations } from 'next-intl/server';
+import { Providers } from '@/app/[locale]/providers';
+import Navbar from '@/components/navbar/navbar';
 
 type Props = {
   params: { locale: string };
@@ -26,7 +28,12 @@ export default function LocaleLayout({
 }) {
   return (
     <html lang={locale}>
-      <body>{children}</body>
+      <body className="dark text-foreground bg-background">
+        <Providers locale={locale}>
+          <Navbar />
+          <main>{children}</main>
+        </Providers>
+      </body>
     </html>
   );
 }
